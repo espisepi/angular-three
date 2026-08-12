@@ -1,3 +1,28 @@
+
+===========================================
+
+
+Comando usado para crear proyecto sepinaco-proyecto:
+
+```bash
+node_modules/.bin/nx generate @nx/angular:application apps/sepinaco-proyecto \
+  --name=sepinaco-proyecto \
+  --standalone \
+  --routing \
+  --style=scss \
+  --linter=eslint \
+  --unitTestRunner=jest \
+  --e2eTestRunner=none
+```
+
+Comando usado para arrancar proyecto sepinaco-proyecto:
+
+```bash
+node_modules/.bin/nx serve sepinaco-proyecto
+```
+
+===========================================
+
 como creo un nuevo proyecto similar al de la carpeta examples:
 
 (Respuesta IA Codex Chatgpt)

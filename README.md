@@ -1,6 +1,10 @@
 
 # Sepinaco Comments
 
+Arrancar el proyecto sepinaco-proyecto:
+
+node_modules/.bin/nx serve sepinaco-proyecto
+
 Arrancar el proyecto examples:
 
 npx nx serve examples
