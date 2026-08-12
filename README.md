@@ -1,3 +1,15 @@
+
+# Sepinaco Comments
+
+Arrancar el proyecto examples:
+
+npx nx serve examples
+
+node_modules/.bin/nx serve examples
+
+
+
+
 # Angular Three workspace
 
 ## Versioning
