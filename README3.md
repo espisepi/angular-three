@@ -1,3 +1,27 @@
+===========================================
+
+
+Comando usado para crear proyecto sepinaco-libreria:
+
+```bash
+pnpm nx generate @nx/angular:library libs/sepinaco-libreria \
+  --name=sepinaco-libreria \
+  --publishable \                               
+  --importPath=angular-three-sepinaco-libreria \
+  --prefix=platform \             
+  --unitTestRunner=vitest-analog \
+  --skipModule
+```
+
+Comando usado para arrancar proyecto sepinaco-proyecto:
+
+```bash
+node_modules/.bin/nx serve sepinaco-proyecto
+```
+
+===========================================
+
+
 como creo un nuevo proyecto de tipo libreria similar a los que aparecen dentro de la carpeta libs:
 
 (Respuesta IA Codex Chatgpt)

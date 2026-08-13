@@ -207,7 +207,17 @@
 		}
 	},
 	"release": {
-		"projects": ["core", "cannon", "postprocessing", "soba", "rapier", "plugin", "tweakpane", "theatre"],
+		"projects": [
+			"core",
+			"cannon",
+			"postprocessing",
+			"soba",
+			"rapier",
+			"plugin",
+			"tweakpane",
+			"theatre",
+			"sepinaco-libreria"
+		],
 		"version": {
 			"preVersionCommand": "pnpm package",
 			"currentVersionResolver": "git-tag",
