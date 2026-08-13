@@ -1,6 +1,16 @@
 
 # Sepinaco Comments
 
+Ejecutar los siguientes comandos:
+
+pnpm nx serve sepinaco-proyecto
+
+pnpm nx build sepinaco-libreria
+
+pnpm nx build sepinaco-proyecto
+
+=============================
+
 Arrancar el proyecto sepinaco-proyecto:
 
 node_modules/.bin/nx serve sepinaco-proyecto
