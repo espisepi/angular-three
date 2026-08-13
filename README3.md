@@ -6,12 +6,12 @@ Comando usado para crear proyecto sepinaco-libreria:
 ```bash
 pnpm nx generate @nx/angular:library libs/sepinaco-libreria \
   --name=sepinaco-libreria \
-  --publishable \                               
+  --publishable \
   --style=scss \
   --importPath=angular-three-sepinaco-libreria \
-  --prefix=platform \             
+  --prefix=platform \
   --unitTestRunner=vitest-analog \
-  --skipModule
+  --skipModule \
 ```
 
 ----- SEGUIR LEYENDO README4.md -----
