@@ -7,6 +7,7 @@ Comando usado para crear proyecto sepinaco-libreria:
 pnpm nx generate @nx/angular:library libs/sepinaco-libreria \
   --name=sepinaco-libreria \
   --publishable \                               
+  --style=scss \
   --importPath=angular-three-sepinaco-libreria \
   --prefix=platform \             
   --unitTestRunner=vitest-analog \
@@ -28,6 +29,7 @@ Este repositorio usa Nx. Para crear una librería publicable similar a `theatre`
 pnpm nx generate @nx/angular:library libs/mi-libreria \
   --name=mi-libreria \
   --publishable \
+  --style=scss \
   --importPath=angular-three-mi-libreria \
   --prefix=platform \
   --unitTestRunner=vitest-analog \
@@ -40,6 +42,7 @@ Antes de ejecutarlo realmente, puedes comprobar qué archivos generará:
 pnpm nx generate @nx/angular:library libs/mi-libreria \
   --name=mi-libreria \
   --publishable \
+  --style=scss \
   --importPath=angular-three-mi-libreria \
   --prefix=platform \
   --unitTestRunner=vitest-analog \
