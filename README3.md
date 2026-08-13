@@ -13,11 +13,7 @@ pnpm nx generate @nx/angular:library libs/sepinaco-libreria \
   --skipModule
 ```
 
-Comando usado para arrancar proyecto sepinaco-proyecto:
-
-```bash
-node_modules/.bin/nx serve sepinaco-proyecto
-```
+----- SEGUIR LEYENDO README4.md -----
 
 ===========================================
 
