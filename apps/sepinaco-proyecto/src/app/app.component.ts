@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
-import { SepinacoLibreriaComponent } from 'angular-three-sepinaco-libreria';
-
 
 @Component({
-    imports: [NxWelcomeComponent, RouterModule, SepinacoLibreriaComponent],
+    imports: [NxWelcomeComponent, RouterModule],
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
