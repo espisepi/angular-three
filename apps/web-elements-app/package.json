@@ -1,0 +1,8 @@
+{
+    "name": "web-elements-app",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "build:ng": "npx -y @angular/cli ng build web-elements-app --prod --output-hashing=none --extra-webpack-config webpack.extra.js --single-bundle true"
+    }
+}

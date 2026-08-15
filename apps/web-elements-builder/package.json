@@ -1,0 +1,18 @@
+{
+    "name": "web-elements-builder",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "build": "rollup -c",
+        "demo": "node --experimental-fetch ./scripts/serve-demo.js || echo 'Use a static server to serve apps/web-elements-builder/demo and dist'"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^24.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.0",
+        "rollup": "^3.0.0",
+        "rollup-plugin-terser": "^7.0.2"
+    },
+    "dependencies": {
+        "three": "^0.160.0"
+    }
+}

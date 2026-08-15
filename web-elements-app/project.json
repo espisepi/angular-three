@@ -1,0 +1,74 @@
+{
+	"name": "web-elements-app",
+	"$schema": "../node_modules/nx/schemas/project-schema.json",
+	"projectType": "application",
+	"prefix": "app",
+	"sourceRoot": "web-elements-app/src",
+	"tags": [],
+	"targets": {
+		"build": {
+			"executor": "@angular/build:application",
+			"outputs": ["{options.outputPath}"],
+			"defaultConfiguration": "production",
+			"options": {
+				"outputPath": "dist/web-elements-app",
+				"browser": "web-elements-app/src/main.ts",
+				"tsConfig": "web-elements-app/tsconfig.app.json",
+				"assets": [
+					{
+						"glob": "**/*",
+						"input": "web-elements-app/public"
+					}
+				],
+				"styles": ["web-elements-app/src/styles.css"]
+			},
+			"configurations": {
+				"production": {
+					"budgets": [
+						{
+							"type": "initial",
+							"maximumWarning": "500kb",
+							"maximumError": "1mb"
+						},
+						{
+							"type": "anyComponentStyle",
+							"maximumWarning": "4kb",
+							"maximumError": "8kb"
+						}
+					],
+					"outputHashing": "all"
+				},
+				"development": {
+					"optimization": false,
+					"extractLicenses": false,
+					"sourceMap": true
+				}
+			}
+		},
+		"serve": {
+			"continuous": true,
+			"executor": "@angular/build:dev-server",
+			"defaultConfiguration": "development",
+			"configurations": {
+				"production": {
+					"buildTarget": "web-elements-app:build:production"
+				},
+				"development": {
+					"buildTarget": "web-elements-app:build:development"
+				}
+			}
+		},
+		"lint": {
+			"executor": "@nx/eslint:lint"
+		},
+		"serve-static": {
+			"continuous": true,
+			"executor": "@nx/web:file-server",
+			"options": {
+				"buildTarget": "web-elements-app:build",
+				"staticFilePath": "dist/web-elements-app/browser",
+				"spa": true
+			}
+		}
+	}
+}

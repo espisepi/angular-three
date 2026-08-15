@@ -1,0 +1,18 @@
+{
+    "name": "web-components",
+    "root": "libs/web-components",
+    "sourceRoot": "libs/web-components/src",
+    "projectType": "library",
+    "targets": {
+        "build": {
+            "executor": "@nrwl/workspace:run-commands",
+            "options": {
+                "commands": [
+                    {
+                        "command": "echo 'Build step: integrate with your Angular build (nx/angular) or use rollup from apps/web-elements-builder'"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+	"version": 1,
+	"projects": {
+		"web-elements-app": {
+			"root": "web-elements-app",
+			"sourceRoot": "web-elements-app/src",
+			"projectType": "application",
+			"architect": {
+				"build": {
+					"builder": "ngx-build-plus:browser",
+					"options": {
+						"outputPath": "dist/web-elements-app",
+						"index": "web-elements-app/src/index.html",
+						"main": "web-elements-app/src/main.ts",
+						"polyfills": [],
+						"tsConfig": "web-elements-app/tsconfig.app.json",
+						"assets": ["web-elements-app/src/favicon.ico", "web-elements-app/src/assets"],
+						"styles": ["web-elements-app/src/styles.css"],
+						"scripts": []
+					},
+					"configurations": {
+						"production": {
+							"optimization": true,
+							"outputHashing": "all",
+							"sourceMap": false,
+							"namedChunks": false
+						}
+					}
+				},
+				"serve": {
+					"builder": "ngx-build-plus:dev-server",
+					"options": {
+						"browserTarget": "web-elements-app:build"
+					}
+				}
+			}
+		}
+	}
+}
